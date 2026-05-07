@@ -8,6 +8,13 @@ Proyek ini bertujuan untuk menganalisis hubungan antara perilaku penggunaan smar
 
 Dataset yang digunakan memiliki sekitar 7.500 data pengguna dengan berbagai fitur perilaku penggunaan smartphone.
 
+## Disclimer :
+
+Saya masih dalam tahap belajar data analis dan machine learning
+Dataset yang digunakan berasal dari kaggle dan hanya memiliki sedikit data (hanya ada 200 baris data)
+Saya menggunakan bantuan AI untuk membantu saya berpikir dalam menganalisis data
+Dataset bersifat simulasi sehingga hasil tidak bisa merepresentasikan kondisi dunia nyata sepenuhnya
+
 ## Tujuan Proyek
 
 Proyek ini bertujuan untuk:
