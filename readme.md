@@ -29,19 +29,20 @@ Mengevaluasi apakah fitur penggunaan smartphone memiliki hubungan yang cukup kua
 Dataset memiliki beberapa fitur utama seperti:
 
 Kolom :
-age	
-gender	
-daily_screen_time_hours	
-social_media_hours	
-gaming_hours	
-work_study_hours	
-sleep_hours	
-notifications_per_day	
-app_opens_per_day
-weekend_screen_time	
-academic_work_impact
-addiction_level	
-stress_level
+
+- age	
+- gender	
+- daily_screen_time_hours	
+- social_media_hours	
+- gaming_hours	
+- work_study_hours	
+- sleep_hours	
+- notifications_per_day	
+- app_opens_per_day
+- weekend_screen_time	
+- academic_work_impact
+- addiction_level	
+- stress_level
 
 ## Data Preprocessing
 
@@ -49,49 +50,28 @@ Tahapan preprocessing dilakukan untuk memastikan data siap digunakan pada model 
 
 1. Mengecek Missing Value
 
-Ditemukan missing value pada kolom:
-
-addiction_level
-
-Jumlah missing value sekitar 819 data.
-
-Penanganan dilakukan menggunakan:
-
-Mode Imputation
+- Ditemukan missing value pada kolom addiction_level
+- Jumlah missing value sekitar 819 data.
+- Penanganan dilakukan menggunakan Mode Imputation
 
 2. Menghapus Kolom Tidak Relevan
 
-Kolom berikut dihapus karena hanya berupa identifier dan tidak memiliki pengaruh terhadap prediksi:
-
-transaction_id
-user_id
+- Kolom berikut dihapus karena hanya berupa identifier dan tidak memiliki pengaruh terhadap prediksi pada transaction_id dan user_id
 
 3. Encoding Data Kategorikal
 
-Karena model machine learning tidak dapat memproses data string secara langsung, dilakukan encoding pada beberapa fitur.
+- Karena model machine learning tidak dapat memproses data string secara langsung, dilakukan encoding pada beberapa fitur.
+- One Hot Encoding Digunakan pada gender Karena bersifat nominal (Male, Female, Other)
 
-One Hot Encoding
 
-Digunakan pada:
-
-gender Karena bersifat nominal:
-
-Male
-Female
-Other
-
-Binary Encoding
-
-Digunakan pada academic_work_impact
+Binary Encoding Digunakan pada academic_work_impact
 
 Mapping:
 
 Yes → 1
 No → 0
 
-Ordinal Encoding
-
-Digunakan pada addiction_level
+4. Ordinal Encoding digunakan pada addiction_level
 
 Mapping:
 
@@ -99,9 +79,7 @@ Mild → 0
 Moderate → 1
 Severe → 2
 
-Label Encoding
-
-Digunakan pada target stress_level
+5. Label Encoding digunakan pada target stress_level
 
 ## Exploratory Data Analysis (EDA)
 
