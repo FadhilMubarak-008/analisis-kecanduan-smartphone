@@ -64,14 +64,14 @@ Tahapan preprocessing dilakukan untuk memastikan data siap digunakan pada model 
 - One Hot Encoding Digunakan pada gender Karena bersifat nominal (Male, Female, Other)
 
 
-Binary Encoding Digunakan pada academic_work_impact
+4. Binary Encoding Digunakan pada academic_work_impact
 
 Mapping:
 
 Yes → 1
 No → 0
 
-4. Ordinal Encoding digunakan pada addiction_level
+5. Ordinal Encoding digunakan pada addiction_level
 
 Mapping:
 
@@ -79,7 +79,7 @@ Mild → 0
 Moderate → 1
 Severe → 2
 
-5. Label Encoding digunakan pada target stress_level
+6. Label Encoding digunakan pada target stress_level
 
 ## Exploratory Data Analysis (EDA)
 
